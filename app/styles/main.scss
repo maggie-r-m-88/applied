@@ -1,0 +1,336 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+$montserrat: 'Montserrat', sans-serif;
+$oswald: 'Oswald', sans-serif;
+$lato: 'Lato', sans-serif;
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  padding-left: 5px;
+}
+// Custom Styles
+.body-container{
+  background-color: rgba(13,153,214,1);
+  width: 100%;
+  background-repeat: no-repeat;
+
+
+}
+
+
+li:before {
+  content: ">";
+  display: inline-block;
+  margin-left: -1.6em;
+  width: 1.3em;
+}
+
+#content-container{
+  width: 100%;
+
+}
+#header-logo{
+  height: 78px;
+  width: 100%;
+  img{
+    float: right;
+    padding: 15px;
+  }
+}
+
+.webinar-header{
+
+
+}
+
+
+.content-left{
+ width: 100%;
+
+ h1,h3,.details{
+   color: white;
+   padding-left: 15px;
+   padding-right: 15px;
+ }
+ h2, p, li{
+   color: white;
+   padding-right: 15px;
+   padding-left: 15px;
+ }
+ h3{
+
+   letter-spacing: 0.5em;
+   text-transform: uppercase;
+   font-family: Helvetica Neue;
+   font-size: 16px;
+   font-weight: 300;
+
+ }
+ h1{
+   font-family: $montserrat;
+   letter-spacing: 0.15em;
+   text-transform: uppercase;
+   font-size: 22px;
+   margin-top: 2px;
+
+ }
+ .details{
+   padding-top: 8px;
+   line-height: 23px;
+   font-family:  $lato;
+   font-size: 20px;
+   letter-spacing: 0.05em;
+   font-weight: 300;
+
+ }
+ h2{
+   font-family: $montserrat;
+   letter-spacing: 0.15em;
+   font-size: 18px;
+   text-transform: uppercase;
+   margin-top: 27px;
+   font-weight: 300;
+ }
+ span{
+   font-family: $lato;
+   letter-spacing: .09em;
+   text-transform: none;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 18px;
+ }
+ p{
+   font-family: $lato;
+   line-height: 18px;
+   letter-spacing: .09em;
+   text-transform: none;
+   font-weight: 300;
+   padding-right: 40px;
+   font-size: 16px;
+
+ }
+ li{
+   list-style-type: none;
+   padding-left: 18px;
+   padding-right: 20px;
+   text-align:left;
+   font-family: $lato;
+   line-height: 18px;
+   letter-spacing: .09em;
+   text-transform: none;
+   font-weight: 300;
+   font-size: 16px;
+   padding-top:7px;
+ }
+
+
+}
+
+.content-right{
+  margin: 15px;
+}
+
+.register{
+
+  margin-top: 35px;
+  h3{
+    color: white;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-family: Helvetica Neue;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  input{
+    height: 30px;
+    width: 100%;
+    font-family: $lato;
+    margin-top: 16px;
+    font-size: 16px;
+    padding: 7px;
+    border: none;
+  }
+  button{
+    margin-top:35px;
+    font-family: $lato;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.15em;
+    background-color: rgb(0,181,228);
+    border: none;
+    transition: all 0.3s ease;
+  }
+  button:hover{
+    background-color: black;
+  }
+
+
+}
+
+.footer{
+  clear: both;
+  overflow: auto;
+  height: 85px;
+  p{
+    color: white;
+    margin-top:30px;
+    padding-right: 25px;
+    float: right;
+    font-size: 9px;
+    color: rgb(236,249,255);
+    //margin-left: 30px;
+  }
+  img{
+    float: left;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 45em) {
+
+  .body-container{
+    background-image: url("/images/bgphoto3.jpg");
+    width: 100%;
+    background-color: none;
+    background-repeat: no-repeat;
+      //background-position:center; /* IE fix */
+
+  }
+
+  #content-container{
+    width: 645px;
+    height: 100%;
+    margin-left: 25%;
+
+  }
+
+.webinar-header, .webinar-info{
+  height: 212px;
+  background-color: rgba(13,153,214,0.93);
+  width: 100%;
+  overflow: auto;
+}
+.webinar-info{
+  height: 450px;
+  margin-top: 10px;
+}
+.content-left{
+  float: left;
+  width: 60%;
+  height: 100%;
+  h1,h3,.details{
+    color: white;
+    padding-left: 25px;
+  }
+  h2, p, li{
+    color: white;
+    padding-left: 25px;
+  }
+  h3{
+    font-size: 13px;
+  }
+  h1{
+    font-size: 17px;
+
+  }
+  .details{
+    font-size: 18px;
+    line-height: 19px;
+  }
+  h2{
+    font-size: 14px;
+
+  }
+  span{
+    font-size: 13px;
+    line-height: 16px;
+
+  }
+  p{
+    font-size: 13px;
+    line-height: 16px;
+
+  }
+  li{
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+}
+
+
+
+.content-right{
+  float: left;
+  width: 40%;
+  margin: 0;
+  height: 100%;
+
+}
+
+.register{
+
+  margin-top: 25px;
+  h3{
+    color: white;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-family: Helvetica Neue;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  input{
+    width: 230px;
+    height: 20px;
+    font-family: $lato;
+    margin-top: 13px;
+    font-size: 12px;
+    padding: 7px;
+    border: none;
+  }
+  button{
+    margin-top:35px;
+    font-family: $lato;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: white;
+    letter-spacing: 0.15em;
+    background-color: rgb(0,181,228);
+    border: none;
+    transition: all 0.3s ease;
+  }
+  button:hover{
+    background-color: black;
+  }
+
+}
+
+
+#stockphoto{
+
+  padding-top: 10px;
+}
+.footer{
+  clear: both;
+  overflow: auto;
+  height: 85px;
+  p{
+    color: white;
+    margin-top:50px;
+    float: left;
+    font-size: 9px;
+    color: rgb(236,249,255);
+    margin-left: 30px;
+  }
+  img{
+    float: right;
+    margin-top:35px;
+  }
+}
+
+}
