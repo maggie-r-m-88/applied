@@ -105,7 +105,7 @@ li:before {
  }
  p{
    font-family: $lato;
-   line-height: 18px;
+   line-height: 21px;
    letter-spacing: .09em;
    text-transform: none;
    font-weight: 300;
@@ -135,21 +135,20 @@ li:before {
 }
 
 .register{
-
   margin-top: 35px;
   h3{
     color: white;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     font-family: Helvetica Neue;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
   }
   input{
     height: 30px;
     width: 100%;
     font-family: $lato;
-    margin-top: 16px;
+    margin-top: 17px;
     font-size: 16px;
     padding: 7px;
     border: none;
@@ -191,24 +190,55 @@ li:before {
   }
 }
 
-#stockphoto{
 
-
+@media screen and (min-width: 30em){
+ .content-left{
+ h1,h3,.details{
+   padding-left: 30px;
+   padding-right: 30px;
+ }
+ h2, p, li{
+   padding-right: 30px;
+   padding-left: 30px;
+ }
+ }
+ .content-right{
+   margin: 30px;
+ }
+ #header-logo{
+   img{
+     float: right;
+     padding: 30px;
+   }
+ }
 }
-@media screen and (min-width: 40em){
+
+
+@media screen and (min-width: 39em){
 
   .body-container{
-    background-image: url("/images/bgphoto3.jpg");
+    background-image: url("../images/bgphoto3.jpg");
     width: 100%;
     background-color: none;
     background-repeat: no-repeat;
       //background-position:center; /* IE fix */
 
   }
+  #header-logo{
+    img{
+      float: right;
+      padding: 15px;
+    }
+  }
   #content-container{
     width: 95%;
     height: 100%;
     margin-left: 2.5%;
+
+  }
+  #stockphoto{
+  display:block;
+  margin: 0;
 
   }
 
@@ -227,11 +257,9 @@ li:before {
   width: 60%;
   height: 100%;
   h1,h3,.details{
-    color: white;
     padding-left: 25px;
   }
   h2, p, li{
-    color: white;
     padding-left: 25px;
   }
   h3{
@@ -256,7 +284,7 @@ li:before {
   }
   p{
     font-size: 13px;
-    line-height: 16px;
+    line-height: 17px;
 
   }
   li{
@@ -277,7 +305,6 @@ li:before {
 }
 
 .register{
-
   margin-top: 25px;
   h3{
     font-size: 13px;
@@ -295,11 +322,6 @@ li:before {
     font-size: 10px;
     color: white;
 
-    border: none;
-    transition: all 0.3s ease;
-  }
-  button:hover{
-    background-color: black;
   }
 
 }
@@ -308,11 +330,7 @@ li:before {
   padding-top: 10px;
 }
 .footer{
-  clear: both;
-  overflow: auto;
-  height: 85px;
   p{
-    color: white;
     margin-top:50px;
     float: left;
     font-size: 9px;
@@ -328,14 +346,19 @@ li:before {
 }
 
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 43em){
+  .content-right{
+    padding-left: 20px;
+
+  }
+}
+@media screen and (min-width: 52em) {
 
   .body-container{
-    background-image: url("/images/bgphoto3.jpg");
+    background-image: url("../images/bgphoto3.jpg");
     width: 100%;
     background-color: none;
     background-repeat: no-repeat;
-      //background-position:center; /* IE fix */
 
   }
 
@@ -345,6 +368,17 @@ li:before {
     margin-left: 25%;
 
   }
+  .content-right{
+    padding: 0;
+  }
 
 
+}
+
+@media screen and (min-width: 1290px) {
+  .body-container{
+    background-image: url("../images/bgphoto-1.jpg");
+      //background-position:center; /* IE fix */
+
+  }
 }
